@@ -1,36 +1,39 @@
 <section class="sidebar-left">
   <div class="sidebar-custom">
     <div class="sidebar-logo">
-      <a href=""> <img src="images/img-1/logo.png"> </a>
-      <button class="menu-hamburger"> <img src="images/hamburger.png"> </button>
+      <a href=""> <%= image_tag("img-1/logo.png") %> </a>
+      <button class="menu-hamburger"> <img src="hamburger.png"> </button>
     </div>
     <div class="sidebar-menu">
       <div class="menu-item">
-        <a href="" class="active"> <img src="images/img-1/home.png"> Dashboard </a>
+        <a href="" class="active"><%= image_tag("img-1/home.png") %> Dashboard </a>
       </div>
       <div class="menu-item">
-        <a href=""><img src="images/img-1/setting-spanner.png"> Services  </a>
+        <a href=""><%= image_tag("img-1/setting-spanner.png") %> Services  </a>
       </div>
       <div class="menu-item">
-        <a href=""> <img src="images/img-1/user.png"> Users </a>
+        <a href=""><%= image_tag("img-1/user.png") %> Users </a>
       </div>
       <div class="menu-item">
-        <a href=""><img src="images/img-1/phone-c.png"> Contact Us  </a>
+        <a href=""><%= image_tag("img-1/phone-c.png") %> Contact Us  </a>
       </div>
       <div class="menu-item">
-        <a href=""><img src="images/img-1/document.png"> About  Us  </a>
+        <a href=""><%= image_tag("img-1/document.png") %> About  Us  </a>
       </div>
       <div class="menu-item">
-        <a href=""><img src="images/img-1/notification-w.png"> Notifications </a>
+        <a href=""><%= image_tag("img-1/notification-w.png") %> Notifications </a>
       </div>
       <div class="menu-item">
-        <a href=""> <img src="images/img-1/user-c.png"> Profile </a>
+        <a href=""><%= image_tag("img-1/user-c.png") %> Profile </a>
       </div>
       <div class="menu-item">
-        <a href=""><img src="images/img-1/setting-spanner.png"> Setting </a>
+        <a href=""><%= image_tag("img-1/setting-spanner.png") %> Setting </a>
       </div>
+      <!-- Logout functionality -->
       <div class="menu-item">
-        <a href=""> <img src="images/img-1/logout.png"> Logout </a>
+        <%= link_to destroy_admin_session_path, method: :delete do %>
+          <%= image_tag("img-1/logout.png") %> Logout
+        <% end %>
       </div>
     </div>
   </div>

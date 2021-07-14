@@ -1,3 +1,76 @@
-<h1>Admins::Dashboards#index</h1>
-<p>Find me in app/views/admins/dashboards/index.html.erb</p>
+<section class="all-dashboard instructor-sec user-html-c">
+  <div class="dashboard-menu">
+    <button class="navbar-toggler navbar-toggler bars-icons align-self-center" type="button" data-toggle="minimize">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="notification-dropdown">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <img alt="bell-icon" src="img-1/notification.png"/> <span class="counter1"> 3 </span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="user-dropdown">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Michael Collen <span> Super Admin </span>
+          <img src="images/user-pic.png">
+          <i class="fa fa-caret-down"> </i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-wrapper">
+    <div class="block-element">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="bookings-header  title-d">
+            <h6 class="col-grey page-title-c" style="font-size: 16px;margin-bottom: 18px;">
+              <span class="terms-c">  About <span class="c1">Us</span> </span>
+            </h6>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="form-label">
+                <p class="col-grey"> Title(Max 50 characters) </p>
+              </div>
+              <div class="form-field1 m-b-20">
+                <input type="text" class="form-control" placeholder="Terms and Condition">
+              </div>
+            </div>
+          </div>
+          <div class="row textarea-sec">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="form-label">
+                <p class="col-grey"> Add Content </p>
+              </div>
+              <div class="form-field1 m-b-20">
+                <img src="images/img-1/textarea-c.png">
+              </div>
+            </div>
+          </div>
+          <div class="row btn-d">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <a href="#" class="save-c">Save </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <%= button_to "Logout", destroy_admin_session_path, method: :delete %>
