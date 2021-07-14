@@ -8,6 +8,11 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+// custom js. we need to call them explicity to use them.
+require("packs/jquery-3.2.1.min.js")
+require("packs/bootstrap.min.js")
+require("packs/functions.js")
+
 import '../stylesheets/application'
 import 'bootstrap/dist/js/bootstrap'
 
