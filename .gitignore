@@ -6,17 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
-
-# Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
-
-# Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
+/vendor/bundle
 
 # Ignore uploaded files in development.
 /storage/*
@@ -34,3 +24,31 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/schema.rb
+
+/config/database.yml
+/public/*
+.env
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/pids/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+!/pids/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
+.DS_Store
+/vendor/*
+/test/*
+/config/master.key
+# Ignore application configuration
+/config/application.yml
+
