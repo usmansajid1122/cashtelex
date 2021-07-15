@@ -6,28 +6,25 @@
     </div>
     <div class="sidebar-menu">
       <div class="menu-item">
-        <a href="" class="active"><%= image_tag("img-1/home.png") %> Dashboard </a>
+        <a href="<%= admins_dashboards_path %>" class="<%= current_class_on_tab("dashboards") %>"><%= image_tag("img-1/home.png") %> Dashboard </a>
       </div>
       <div class="menu-item">
-        <a href=""><%= image_tag("img-1/setting-spanner.png") %> Services  </a>
+        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/setting-spanner.png") %> Services  </a>
       </div>
       <div class="menu-item">
-        <a href=""><%= image_tag("img-1/user.png") %> Users </a>
+        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user.png") %> Users </a>
       </div>
       <div class="menu-item">
-        <a href=""><%= image_tag("img-1/phone-c.png") %> Contact Us  </a>
+        <a href="<%= admins_about_us_path %>" class="<%= current_class_on_tab("about_us") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
       </div>
       <div class="menu-item">
-        <a href=""><%= image_tag("img-1/document.png") %> About  Us  </a>
+        <a href="<%= admins_terms_path %>" class="<%= current_class_on_tab("terms") %>"><%= image_tag("img-1/document.png") %> Terms and Condition</a>
       </div>
       <div class="menu-item">
-        <a href=""><%= image_tag("img-1/notification-w.png") %> Notifications </a>
+        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user-c.png") %> Profile </a>
       </div>
       <div class="menu-item">
-        <a href=""><%= image_tag("img-1/user-c.png") %> Profile </a>
-      </div>
-      <div class="menu-item">
-        <a href=""><%= image_tag("img-1/setting-spanner.png") %> Setting </a>
+        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/setting-spanner.png") %> Setting </a>
       </div>
       <!-- Logout functionality -->
       <div class="menu-item">

@@ -1,40 +1,209 @@
 <section class="all-dashboard instructor-sec user-html-c">
-  <%= render partial: "layouts/partials/header"%>
-  <div class="dashboard-wrapper">
+  <%= render partial: "layouts/partials/header" %>
+  <div class="dashboard-wrapper  cashtolex-gold-sec dashbaord-sec">
     <div class="block-element">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-          <div class="bookings-header  title-d">
-            <h6 class="col-grey page-title-c" style="font-size: 16px;margin-bottom: 18px;">
-              <span class="terms-c">  About <span class="c1">Us</span> </span>
-            </h6>
+      <div class="row m-b-20">
+        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+          <div class="page-title">
+            <h3 class="col-black"> Dashboard </h3>
           </div>
-          <div class="row">
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-              <div class="form-label">
-                <p class="col-grey"> Title(Max 50 characters) </p>
-              </div>
-              <div class="form-field1 m-b-20">
-                <input type="text" class="form-control" placeholder="Terms and Condition">
-              </div>
-            </div>
-          </div>
-          <div class="row textarea-sec">
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-              <div class="form-label">
-                <p class="col-grey"> Add Content </p>
-              </div>
-              <div class="form-field1 m-b-20">
-                <%= image_tag("img-1/textarea-c.png") %>
-              </div>
-            </div>
-          </div>
-          <div class="row btn-d">
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-              <a href="#" class="save-c">Save </a>
+        </div>
+        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 ">
+          <div class="right-side-c">
+            <div class="date-sec  custom-c34   refresh-uji">
+              <span  class="cal-sec-img">
+                <%= image_tag("img-2/calendar-d.png") %>
+              </span>
+              <span>
+                <label>From</label>
+                <input class="form-control" type="text" placeholder="click to enter date">
+              </span>
+              <span>
+                <label>To</label>
+                <input class="form-control" type="text" placeholder="click to enter date">
+              </span>
+              <span class="cal-icon icon-d custom-c2   refresh-u">
+                <%= image_tag("img-2/undo.png") %>
+              </span>
             </div>
           </div>
         </div>
+      </div>
+      <div class="block-element dash-div">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+            <div class="dashboard-box box-type1">
+              <div class="dash-icon">
+                <%= image_tag("img-2/business-and-trade.png") %>
+              </div>
+              <div class="dash-title first-div">
+                <h4>20</h4>
+                <p class="col-grey"> Total Towers </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+            <div class="dashboard-box box-type1">
+              <div class="dash-icon">
+                <%= image_tag("img-2/store.png") %>
+              </div>
+              <div class="dash-title sec-div">
+                <h4>18 </h4>
+                <p class="col-grey"> Total USD Price </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+            <div class="dashboard-box box-type1">
+              <div class="dash-icon">
+                <%= image_tag("img-2/interior-design.png") %>
+              </div>
+              <div class="dash-title third-div">
+                <h4>4 </h4>
+                <p class="col-grey"> Total BTC Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+            <div class="dashboard-box box-type1">
+              <div class="dash-icon">
+                <%= image_tag("img-2/gold.png") %>
+              </div>
+              <div class="dash-title four-div">
+                <h4>58 </h4>
+                <p class="col-grey"> Total CTLX Price </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+            <div class="dashboard-box box-type1">
+              <div class="dash-title fif-div">
+                <h4>58 </h4>
+                <p class="col-grey"> Total CTLX Price </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+            <div class="dashboard-box box-type1">
+              <div class="dash-title six-div">
+                <h4>58 </h4>
+                <p class="col-grey"> Total CTLX Price </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element dash-div">
+        <div class="row">
+          <div class="col-md-6">
+            <%= image_tag("img-2/graph-1.png") %>
+          </div>
+          <div class="col-md-6">
+            <%= image_tag("img-2/graph-2.png") %>
+          </div>
+        </div>
+      </div>
+      <div class="block-element rating-head">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="rate-c"> Rate </h3>
+            <div  class="rating-inner-sec">
+              <h3> Cashtelex : <span class="c1"> 50000 </span></h3>
+              <h3> BTC :  <span class="c2"> 50000 </span></h3>
+              <h3> USD : <span class="c3"> 50000 </span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element gold-headings">
+        <div class="row">
+          <h3>Total Gold Shapes</h3>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table-type1">
+          <tbody>
+            <tr>
+              <th class="col-black"> Sr.No. </th>
+              <th class="col-black"> Photo </th>
+              <th class="col-black">Building Name </th>
+              <th class="col-black"> Unit Name </th>
+              <th class="col-black"> Price </th>
+              <th class="col-black"> Owner Name  </th>
+              <th class="col-black"> Status </th>
+              <th class="col-black"> Actions </th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td class="photo-cd">
+                <span class="photo-first"> <%= image_tag("img-2/gallery-1.png") %> </span>
+                <span class="photo-sec">   <%= image_tag("img-2/gallery-1.png") %> </span>
+              </td>
+              <td> India </td>
+              <td> 4.80 Grams </td>
+              <td> 056565 </td>
+              <td> $567 </td>
+              <td> <span class="ready-t"> Ready </span> </td>
+              <td class="actions-btn-c">
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f">
+                  <%= image_tag("img-2/eye.png") %>
+                </a>
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f">
+                  <%= image_tag("img-2/content.png") %>
+                </a>
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f cross-t">
+                  <%= image_tag("img-2/cross.png") %>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="photo-cd">
+                <span class="photo-first"> <%= image_tag("img-2/gallery-1.png") %> </span>
+                <span class="photo-sec">   <%= image_tag("img-2/gallery-1.png") %> </span>
+              </td>
+              <td> India </td>
+              <td> 4.80 Grams </td>
+              <td> 056565 </td>
+              <td> $567 </td>
+              <td> <span class="Inprogress-t"> Inprogress </span> </td>
+              <td class="actions-btn-c">
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f">
+                  <%= image_tag("img-2/eye.png") %>
+                </a>
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f">
+                  <%= image_tag("img-2/content.png") %>
+                </a>
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f cross-t">
+                  <%= image_tag("img-2/cross.png") %>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="photo-cd">
+                <span class="photo-first"> <%= image_tag("img-2/gallery-1.png") %> </span>
+                <span class="photo-sec">   <%= image_tag("img-2/gallery-1.png") %> </span>
+              </td>
+              <td> India </td>
+              <td> 4.80 Grams </td>
+              <td> 056565 </td>
+              <td> $567 </td>
+              <td> <span class="Inprogress-t"> Inprogress </span> </td>
+              <td class="actions-btn-c">
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f">
+                  <%= image_tag("img-2/eye.png") %>
+                </a>
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f">
+                  <%= image_tag("img-2/content.png") %>
+                </a>
+                <a href="https://vipankumar.in/delivery-app/admin/customer/39" class="edit-btn-f cross-t">
+                  <%= image_tag("img-2/cross.png") %>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
