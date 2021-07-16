@@ -2,6 +2,13 @@
   <button class="navbar-toggler navbar-toggler bars-icons align-self-center" type="button" data-toggle="minimize">
     <i class="fa fa-bars"></i>
   </button>
+  <% if controller_name == "registrations" %>
+    <label class="switch">
+      <span class="online-text">Online</span>
+      <input type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>
+  <% end %>
   <div class="notification-dropdown">
     <div class="dropdown">
       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

@@ -1,0 +1,68 @@
+<section class="all-dashboard instructor-sec user-html-c">
+  <%= render partial: "layouts/partials/header"%>
+  <div class="dashboard-wrapper">
+    <div class="block-element">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="bookings-header  title-d">
+            <h6 class="col-grey page-title-c" style="font-size: 16px;margin-bottom: 18px;">
+              <span class="terms-c"><%= service_title(@service.title, "first") %><span class="c1"> <%= service_title(@service.title, "last") %>  </span> </span>
+            </h6>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="form-label">
+                <p class="col-grey"> Title(Max 50 characters) </p>
+              </div>
+              <div class="form-field1 m-b-20">
+                <input type="text" class="form-control" placeholder="Terms and Condition" value="<%= @service.title %>">
+              </div>
+            </div>
+          </div>
+          <div class="row  add-banner-l">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="form-label">
+                <p class="col-grey"> Add Banner </p>
+              </div>
+              <div class="form-field1 m-b-20 banner-sec-f">
+                <div class="upload-img-sections">
+                  <div class="upload-camera-sec-1">
+                    <div class="upload-img">
+                      <%= image_tag("img-1/photo-camera.png") %>
+                      <input  id="uu" accept=".png" class="upload-cd" type="file" name="upload_csv">
+                      <span class="text-cd"> Click Picture from the Camera <br>
+                        1024*90 </span>
+                    </div>
+                  </div>
+                  <div class="upload-camera-sec-2 upload-camera-sec-1">
+                    <div class="upload-img">
+                      <%= image_tag("img-1/image-c.png") %>
+                      <input  id="uu" accept=".csv" class="upload-cd" type="file" name="upload_csv">
+                      <span class="text-cd"> Click Picture from the Camera <br>
+                        1024*90 </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row textarea-sec add-banner-l">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="form-label">
+                <p class="col-grey"> Add Content </p>
+              </div>
+              <div class="form-field1 m-b-20 banner-sec-f">
+                <%= image_tag("img-1/cash-tr.png") %>
+              </div>
+            </div>
+          </div>
+          <div class="row btn-d">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <a href="#" class="save-c">Save </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,12 +1,12 @@
 <section class="all-dashboard instructor-sec user-html-c">
-  <%= render partial: "layouts/partials/header"%>
+  <%= render partial: "layouts/partials/header" %>
   <div class="dashboard-wrapper">
     <div class="block-element">
       <div class="row">
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
           <div class="bookings-header  title-d">
             <h6 class="col-grey page-title-c" style="font-size: 16px;margin-bottom: 18px;">
-              <span class="terms-c">  Terms & <span class="c1"> Conditions</span> </span>
+              <span class="terms-c">  About <span class="c1">Us</span> </span>
             </h6>
           </div>
           <div class="row">
@@ -15,7 +15,7 @@
                 <p class="col-grey"> Title(Max 50 characters) </p>
               </div>
               <div class="form-field1 m-b-20">
-                <input type="text" class="form-control" placeholder="Terms and Condition">
+                <input type="text" class="form-control" placeholder="about us" value="<%= @about_us.title %>">
               </div>
             </div>
           </div>

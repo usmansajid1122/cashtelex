@@ -8,23 +8,30 @@
       <div class="menu-item">
         <a href="<%= admins_dashboards_path %>" class="<%= current_class_on_tab("dashboards") %>"><%= image_tag("img-1/home.png") %> Dashboard </a>
       </div>
+      <!-- TEmporary Block-->
       <div class="menu-item">
-        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/setting-spanner.png") %> Services  </a>
+        <ul><a class="<%= current_class_on_tab("services") %>"><%= image_tag("img-1/setting-spanner.png") %> Services
+            <% Service.all.each do |service| %>
+              <a href="<%= edit_admins_service_path(service) %>">
+                <li><%= service.title %></li>
+              </a>
+            <% end %>
+          </a></ul>
       </div>
-      <div class="menu-item">
+      <!-- <div class="menu-item">
         <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user.png") %> Users </a>
+      </div> -->
+      <div class="menu-item">
+        <a href="<%= edit_admins_about_u_path(About.first) %>" class="<%= current_class_on_tab("about_us") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
       </div>
       <div class="menu-item">
-        <a href="<%= admins_about_us_path %>" class="<%= current_class_on_tab("about_us") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
+        <a href="<%= edit_admins_term_path(Term.first) %>" class="<%= current_class_on_tab("terms") %>"><%= image_tag("img-1/document.png") %> Terms and Condition</a>
       </div>
-      <div class="menu-item">
-        <a href="<%= admins_terms_path %>" class="<%= current_class_on_tab("terms") %>"><%= image_tag("img-1/document.png") %> Terms and Condition</a>
-      </div>
-      <div class="menu-item">
+      <!-- <div class="menu-item">
         <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user-c.png") %> Profile </a>
-      </div>
+      </div> -->
       <div class="menu-item">
-        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/setting-spanner.png") %> Setting </a>
+        <a href="<%= edit_admin_registration_path %>" class="<%= current_class_on_tab("registrations") %>"><%= image_tag("img-1/setting-spanner.png") %> Setting </a>
       </div>
       <!-- Logout functionality -->
       <div class="menu-item">

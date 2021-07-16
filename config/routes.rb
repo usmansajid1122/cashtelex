@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :dashboards
     resources :about_us
     resources :terms
+    resources :services
   end
 end

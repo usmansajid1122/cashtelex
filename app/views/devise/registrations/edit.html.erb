@@ -1,17 +1,156 @@
+<section class="all-dashboard instructor-se my-profile">
+  <%= render partial: "layouts/partials/header"%>
+  <div class="dashboard-wrapper">
+    <div class="row m-b-20">
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+        <div class="page-title">
+          <h3 class="col-black"> Settings </h3>
+        </div>
+      </div>
+    </div>
+    <div class="block-element">
+      <div class="">
+        <h5 class="basic-info-c">Basic Info</h5>
+        <div class="row">
+          <!--      <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 col-md-offset-2">
+                        <div class="preview text-left">
+                           <img class="preview-img" src="images/img-1/profile-img.png" alt="Preview Image" width="200" height="200">
+                           <div class="browse-button">
+                              <i class="fa fa-camera"></i>
+                              <input class="browse-input" type="file" required="" name="UploadedFile" id="userImage">
+                           </div>
+                           <span class="Error"></span>
+                        </div>
+                        </div> -->
+          <div class="col-md-6">
+            <div class="box-type1  notify">
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> First Name </p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="text" class="form-control" placeholder="  Enter First Name ">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> Last Name </p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="text" class="form-control" placeholder="Enter Last Name">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> Email </p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="text" class="form-control" placeholder="Enter Email Address ">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> Facebook Link</p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="text" class="form-control" placeholder="Type  Questions ">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> Twitter Link</p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="text" class="form-control" placeholder="Type  Questions ">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> linkdin link</p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="text" class="form-control" placeholder="Type  Questions ">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> A short title about yourself</p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <textarea type="text" class="form-control" placeholder="Type  Questions "></textarea>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> Biography </p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <%= image_tag("img-1/bio.png") %>
+                </div>
+              </div>
+              <div class="block-element text-right">
+                <button class="btn-c">  Save  </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box-type1  notify">
+              <div class="col-md-12 col-xs-12">
+                <div class="preview text-left">
+                  <img class="preview-img" src="<%= image_url("stephen_profile@2x.png")%>" alt="Preview Image" width="200" height="200">
+                  <div class="browse-button">
+                    <i class="fa fa-camera"></i>
+                    <input class="browse-input" type="file" required="" name="UploadedFile" id="userImage">
+                  </div>
+                  <span class="Error"></span>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey">Current Password </p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="Password" class="form-control" placeholder="********** ">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> New Password</p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="Password" class="form-control" placeholder="********** ">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="form-label">
+                  <p class="col-grey"> Confirm Password</p>
+                </div>
+                <div class="form-field1 m-b-20">
+                  <input type="Password" class="form-control" placeholder="********** ">
+                </div>
+              </div>
+              <div class="block-element text-right">
+                <button class="btn-c">  Save  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- 
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
-
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
-
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
-
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
@@ -20,24 +159,19 @@
       <em><%= @minimum_password_length %> characters minimum</em>
     <% end %>
   </div>
-
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
-
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
-
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
 <% end %>
-
 <h3>Cancel my account</h3>
-
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
 <%= link_to "Back", :back %>
+-->
