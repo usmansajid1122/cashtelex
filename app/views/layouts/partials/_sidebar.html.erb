@@ -1,0 +1,44 @@
+<section class="sidebar-left">
+  <div class="sidebar-custom">
+    <div class="sidebar-logo">
+      <a href=""> <%= image_tag("img-1/logo.png") %> </a>
+      <button class="menu-hamburger"><%= image_tag("hamburger.png") %> </button>
+    </div>
+    <div class="sidebar-menu">
+      <div class="menu-item">
+        <a href="<%= admins_dashboards_path %>" class="<%= current_class_on_tab("dashboards") %>"><%= image_tag("img-1/home.png") %> Dashboard </a>
+      </div>
+      <!-- TEmporary Block-->
+      <div class="menu-item">
+        <ul><a class="<%= current_class_on_tab("services") %>"><%= image_tag("img-1/setting-spanner.png") %> Services
+            <% Service.all.each do |service| %>
+              <a href="<%= edit_admins_service_path(service) %>">
+                <li><%= service.title %></li>
+              </a>
+            <% end %>
+          </a></ul>
+      </div>
+      <!-- <div class="menu-item">
+        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user.png") %> Users </a>
+      </div> -->
+      <div class="menu-item">
+        <a href="<%= edit_admins_about_u_path(About.first) %>" class="<%= current_class_on_tab("about_us") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
+      </div>
+      <div class="menu-item">
+        <a href="<%= edit_admins_term_path(Term.first) %>" class="<%= current_class_on_tab("terms") %>"><%= image_tag("img-1/document.png") %> Terms and Condition</a>
+      </div>
+      <!-- <div class="menu-item">
+        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user-c.png") %> Profile </a>
+      </div> -->
+      <div class="menu-item">
+        <a href="<%= edit_admin_registration_path %>" class="<%= current_class_on_tab("registrations") %>"><%= image_tag("img-1/setting-spanner.png") %> Setting </a>
+      </div>
+      <!-- Logout functionality -->
+      <div class="menu-item">
+        <%= link_to destroy_admin_session_path, method: :delete do %>
+          <%= image_tag("img-1/logout.png") %> Logout
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

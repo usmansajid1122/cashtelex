@@ -12,7 +12,7 @@
 default: &default
   adapter: mysql2
   username: root
-  password: esfera
+  password: Vishal@8277
   pool: 5
   host:  localhost
   port: 3306
