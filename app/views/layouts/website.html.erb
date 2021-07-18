@@ -1,0 +1,25 @@
+<!-- Layout for Client panel -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cashtelex</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+      
+  <body>
+    <!-- header -->
+    <%= render partial: "layouts/header" %>
+    <!-- Main Content -->
+    <%= yield %>
+    <!-- footer -->
+    <%= render partial: "layouts/footer" %>
+  </body>
+</html>
