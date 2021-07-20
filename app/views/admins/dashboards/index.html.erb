@@ -16,11 +16,11 @@
               </span>
               <span>
                 <label>From</label>
-                <input class="form-control" type="text" placeholder="click to enter date">
+                <input class="form-control" type="date" placeholder="click to enter date">
               </span>
               <span>
                 <label>To</label>
-                <input class="form-control" type="text" placeholder="click to enter date">
+                <input class="form-control" type="date" placeholder="click to enter date">
               </span>
               <span class="cal-icon icon-d custom-c2   refresh-u">
                 <%= image_tag("img-2/undo.png") %>
@@ -96,10 +96,10 @@
       <div class="block-element dash-div">
         <div class="row">
           <div class="col-md-6">
-            <%= image_tag("img-2/graph-1.png") %>
+             <%= get_graph_data %>
           </div>
           <div class="col-md-6">
-            <%= image_tag("img-2/graph-2.png") %>
+            <%= get_graph_gold_data %>
           </div>
         </div>
       </div>

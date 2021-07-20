@@ -4000,4 +4000,40 @@ padding: 6px 10px;
 
 
     margin-bottom:35px;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+ }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
+
+
+
+body{
+
+    font-family: 'Qahiri', sans-serif !important;
+}
+
+.date-sec.custom-c34.refresh-uji  input.form-control{
+
+line-height: 18px;
+
 }
