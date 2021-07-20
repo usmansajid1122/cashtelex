@@ -1599,7 +1599,7 @@ font-size: 36px;
     background: #03a9f4;
     border-radius: 27px;
     padding: 8px 52px;
-    width: 91px;
+    /*width: 91px;*/
     text-align: center;
     color: #fff;
     line-height: 18px;
@@ -2491,6 +2491,8 @@ background-color: #fff !important;
 
 
 
+
+
 .social-sec-d {
     display: flex;
 }
@@ -2499,6 +2501,138 @@ background-color: #fff !important;
 .social-sec-d  ul {
     display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2514,6 +2648,81 @@ background-color: #fff !important;
 }
 
 
+
+
+
+
+
+
+
+.login-form .menu-wrap.ct-sec-2.services-sec.about-us-sec {
+    background: #914545;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px #cccc;
+    margin-top: 57px;
+}
+
+.login-form .ct-sec-2.services-sec .services-head {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.wrapper.getintuoch-sec.Services-d.login-form {
+    padding-top: 39px;
+    padding-bottom: 47px;
+}
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .btn-primary  {
+
+  float: none !important;
+
+}
+
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .menu-wrap.ct-sec-2.services-sec.about-us-sec {
+    background: #ffffff;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px #b3a2a2cc;
+
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .services-head h3 {
+    color: #040405 !important;
+    line-height: 53px;
+    font-size: 38px !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .form-group.checkboxl {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5c6063;
+    position: relative;
+    left: 9px;
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  span.forgot-p{
+
+
+    text-align: right;
+    float: right;
+    font-size: 15px;
+    color: #5c6063;
+    font-weight: 700;
+
+
+}
 .blog-watermark img {
     width: 70px !important;
     position: absolute;
@@ -2525,3 +2734,210 @@ background-color: #fff !important;
 .blog-watermark {
     position: relative;
 }
+
+
+
+
+
+.video-btn img {
+    width: 22px;
+    position: relative;
+    left: 4px;
+    padding: -1px;
+    top: -2px;
+    max-width: unset !important;
+}
+
+
+
+
+a.video-btn {
+    border-radius: 100%;
+    width: 46px !important;
+    height: 46px;
+    margin-left: 10px;
+    padding: 12px;
+}
+
+
+.nav-link.login-btn {
+    position: relative;
+    top: 8px;
+}
+
+
+
+
+
+
+
+
+
+.login-form .menu-wrap.ct-sec-2.services-sec.about-us-sec {
+    background: #914545;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px #cccc;
+    margin-top: 57px;
+}
+
+.login-form .ct-sec-2.services-sec .services-head {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.wrapper.getintuoch-sec.Services-d.login-form {
+    padding-top: 39px;
+    padding-bottom: 47px;
+}
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .btn-primary  {
+
+  float: none !important;
+
+}
+
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .menu-wrap.ct-sec-2.services-sec.about-us-sec {
+    background: #ffffff;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px #b3a2a2cc;
+
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .services-head h3 {
+    color: #040405 !important;
+    line-height: 53px;
+    font-size: 38px !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .form-group.checkboxl {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5c6063;
+    position: relative;
+    left: 9px;
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  span.forgot-p{
+
+
+    text-align: right;
+    float: right;
+    font-size: 15px;
+    color: #5c6063;
+    font-weight: 700;
+
+
+}
+
+
+
+
+.links-s {
+    font-size: 14px;
+}
+
+
+.contact-form  .form-group {
+    margin-bottom: 35px !important;
+}
+
+.menu-wrap.ct-sec-2.services-sec.contact-us .contact-form .btn-primary {
+
+margin-top: 40px;
+line-height: 33px;
+font-size: 18px;
+
+}
+
+
+
+.login-form .menu-wrap.ct-sec-2.services-sec.about-us-sec {
+    background: #914545;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px #cccc;
+    margin-top: 57px;
+}
+
+.login-form .ct-sec-2.services-sec .services-head {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.wrapper.getintuoch-sec.Services-d.login-form {
+    padding-top: 39px;
+    padding-bottom: 47px;
+}
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .btn-primary  {
+
+  float: none !important;
+
+}
+
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .menu-wrap.ct-sec-2.services-sec.about-us-sec {
+    background: #ffffff;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px #b3a2a2cc;
+
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .services-head h3 {
+    color: #040405 !important;
+    line-height: 53px;
+    font-size: 38px !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  .form-group.checkboxl {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5c6063;
+    position: relative;
+    left: 9px;
+}
+
+
+
+.wrapper.getintuoch-sec.Services-d.login-form  span.forgot-p{
+
+
+    text-align: right;
+    float: right;
+    font-size: 15px;
+    color: #5c6063;
+    font-weight: 700;
+
+
+}
+
+.links-s {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 193px !important;
+}
+

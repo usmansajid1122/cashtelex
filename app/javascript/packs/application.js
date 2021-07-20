@@ -12,6 +12,22 @@ require("channels")
 require("packs/jquery-3.2.1.min.js")
 require("packs/bootstrap.min.js")
 require("packs/functions.js")
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
+//= require turbolinks
+
+ // require ("highcharts/highcharts")
+import Highcharts from 'highcharts'
+import HighchartsMore from 'highcharts/highcharts-more';
+import HighchartsSolidGauge from 'highcharts/modules/solid-gauge';
+import HighchartsExporting from 'highcharts/modules/exporting';
+
+window.jQuery = jQuery
+window.$ = $
+window.Highcharts = Highcharts;
+//= require highcharts/highcharts-more
+//= require highcharts/highstock
 
 // import '../stylesheets/application'
 // import 'bootstrap/dist/js/bootstrap'
