@@ -22,7 +22,7 @@
         <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user.png") %> Users </a>
       </div> -->
       <div class="menu-item">
-        <a href="<%= edit_admins_about_u_path(About.first) %>" class="<%= current_class_on_tab("about_us") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
+        <a href="<%= edit_admins_about_path(About.first) %>" class="<%= current_class_on_tab("abouts") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
       </div>
       <div class="menu-item">
         <a href="<%= edit_admins_term_path(Term.first) %>" class="<%= current_class_on_tab("terms") %>"><%= image_tag("img-1/document.png") %> Terms and Condition</a>

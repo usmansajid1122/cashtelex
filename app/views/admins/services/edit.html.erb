@@ -3,7 +3,11 @@
   <div class="dashboard-wrapper">
     <div class="block-element">
       <div class="row">
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <%= form_for([:admins, @service], class: "col-md-12 col-lg-12 col-sm-12 col-xs-12") do |f| %>
+        <%= render "devise/shared/error_messages", resource: @service %>
+         <% if flash[:notice] %>
+          <p id= "flash_notice" class="flash_notice"><%= flash[:notice] %></p>
+        <% end %>
           <div class="bookings-header  title-d">
             <h6 class="col-grey page-title-c" style="font-size: 16px;margin-bottom: 18px;">
               <span class="terms-c"><%= service_title(@service.title, "first") %><span class="c1"> <%= service_title(@service.title, "last") %>  </span> </span>
@@ -15,7 +19,7 @@
                 <p class="col-grey"> Title(Max 50 characters) </p>
               </div>
               <div class="form-field1 m-b-20">
-                <input type="text" class="form-control" placeholder="Terms and Condition" value="<%= @service.title %>">
+                <%= f.text_field :title, class: "form-control" %>
               </div>
             </div>
           </div>
@@ -52,16 +56,16 @@
                 <p class="col-grey"> Add Content </p>
               </div>
               <div class="form-field1 m-b-20 banner-sec-f">
-                <%= image_tag("img-1/cash-tr.png") %>
+                <%= f.text_area :content, class: "form-control" %>
               </div>
             </div>
           </div>
           <div class="row btn-d">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-              <a href="#" class="save-c">Save </a>
+              <%= f.submit :Save, class: "save-c" %>
             </div>
           </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>
