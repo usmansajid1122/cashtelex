@@ -11,8 +11,10 @@
   </head>
   <body>
     <!-- Sidebar -->
-    <%#= render partial: "layouts/partials/sidebar" %>
-    <!-- Main Content -->
-    <%= yield %>
+      <% if current_admin.present? %>
+        <%= render partial: "layouts/partials/sidebar" %>
+      <% end %>
+      <!-- Main Content -->
+      <%= yield %>
   </body>
 </html>
