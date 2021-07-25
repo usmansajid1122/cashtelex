@@ -8,19 +8,22 @@
       <div class="menu-item">
         <a href="<%= admins_dashboards_path %>" class="<%= current_class_on_tab("dashboards") %>"><%= image_tag("img-1/home.png") %> Dashboard </a>
       </div>
-      <!-- TEmporary Block-->
-      <div class="menu-item">
-        <ul><a class="<%= current_class_on_tab("services") %>"><%= image_tag("img-1/setting-spanner.png") %> Services
-            <% Service.all.each do |service| %>
-              <a href="<%= edit_admins_service_path(service) %>">
-                <li><%= service.title %></li>
-              </a>
+      <div class="menu-item  collapse-d2">
+        <a href="javascript:void(0);" id="service_parent_tab" data-toggle="collapse" data-target="#demo">
+          <%= image_tag("img-2/store.png", class: "active-c") %>
+          Services  
+          <span> 
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </span>
+        </a>
+        <div id="demo" class="collapse">
+            <%  Service.all.each do |service| %>
+              <%= link_to edit_admins_service_path(service), class: current_class_on_tab("services", service.id) do %>
+                <%= image_tag service_image_path(service.title), class: "active-c" %> <%= service.title %>
+              <% end %>
             <% end %>
-          </a></ul>
+        </div>
       </div>
-      <!-- <div class="menu-item">
-        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user.png") %> Users </a>
-      </div> -->
       <div class="menu-item">
         <a href="<%= edit_admins_about_path(About.first) %>" class="<%= current_class_on_tab("abouts") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
       </div>
