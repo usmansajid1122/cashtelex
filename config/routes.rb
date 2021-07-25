@@ -13,11 +13,11 @@ Rails.application.routes.draw do
     end
   end
 
-  devise_for :admins
+  devise_for :admins, :controllers => { :registrations => :registrations }
 
   namespace :admins do
     resources :dashboards
-    resources :about_us
+    resources :abouts
     resources :terms
     resources :services
   end

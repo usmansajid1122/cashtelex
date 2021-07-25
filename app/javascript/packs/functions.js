@@ -15,6 +15,12 @@ $(document).ready(function () {
         val1 = 0;
       }
     });
+
+    if (document.getElementById('flash_notice')) {
+      setTimeout(function(){
+        document.getElementById('flash_notice').remove();
+      }, 1500);
+    }
 });
 
 function readURL(input) {
