@@ -1,0 +1,23 @@
+// Place all the styles related to the admins::abouts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// css for errors UL
+.error_explanation {
+    h2 {
+        color: red;
+    }
+    ul {
+        margin-left: 20px;
+    }
+}
+
+// css for flash message
+p.flash_notice {
+    border-style: solid;
+    background-color: #00800091;
+    color: white;
+    padding: 10px 50px 10px 10px;
+    opacity:1;
+    transition:opacity 500ms;
+}

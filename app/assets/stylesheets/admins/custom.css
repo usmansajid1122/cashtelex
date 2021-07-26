@@ -836,6 +836,7 @@ button.menu-hamburger {
     width: 20%;
     background: #002046;
     overflow: auto;
+    overflow-y: scroll !important;
 }
 
 .action-buttons2 {
@@ -2889,6 +2890,19 @@ a.cross-icon i.fa.fa-times {
 
 
 .row.btn-d a.save-c {
+    background: #03a9f5;
+    color: #fff;
+    padding: 10px 11px;
+    width: 200px;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    border-radius: 65px;
+    font-size: 16px;
+}
+
+/* temporary css added for input type button SAVE( VISHAL)  */
+.save-c {
     background: #03a9f5;
     color: #fff;
     padding: 10px 11px;
