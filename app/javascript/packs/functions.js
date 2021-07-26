@@ -1,3 +1,14 @@
+// This will execute everytime page will load.
+$(document).on('turbolinks:load', function() {
+ 
+  var full_url_path = window.location.pathname.split("/");
+  var controller_name = full_url_path[2];
+  if (controller_name == "services") {
+    $('#service_parent_tab').click();
+  }
+ 
+});
+
 $(document).ready(function () {
   var val1 = 0;
 

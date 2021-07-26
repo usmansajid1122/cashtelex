@@ -4014,40 +4014,57 @@ padding: 6px 10px;
 
 
     margin-bottom:35px;
-
 }
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
-
-
- body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
- }
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
-
-
-
-
-body{
-
-    font-family: 'Qahiri', sans-serif !important;
+.menu-item.collapse-d2 i.fa.fa-angle-right {
+    position: absolute;
+    right: -151px;
+    width: 21px;
+    font-size: 21px;
 }
 
-.date-sec.custom-c34.refresh-uji  input.form-control{
 
-line-height: 18px;
+.menu-item.collapse-d2 span {
+
+
+    position: relative;
+}
+
+
+
+.menu-item.collapse-d2 div#demo {
+    margin-left: 11px;
+    line-height: 28px;
+}
+
+
+
+.menu-item.collapse-d21 i.fa.fa-angle-right {
+    position: absolute;
+    right: -88px;
+    width: 21px;
+    font-size: 21px;
+}
+
+
+.menu-item.collapse-d21 span {
+
+
+    position: relative;
+}
+
+
+.menu-item.collapse-d21 div#demo {
+    margin-left: 11px;
+    line-height: 28px;
+}
+
+
+a.video-btn img {
+    
+    width: 20px;
+
 
 }
