@@ -62,3 +62,4 @@ gem 'faker'
 # lazy_hign_charts for dashborad charts
 gem 'lazy_high_charts'
 gem 'pry'
+gem 'unicorn'
