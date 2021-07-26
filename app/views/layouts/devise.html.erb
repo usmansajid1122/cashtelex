@@ -10,10 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
-    <!-- show sidebar for registration controller -->
-    <% if controller_name == "registrations" %>
-      <%= render partial: "layouts/partials/sidebar" %>
-    <% end %>
-    <%= yield %>
+    <!-- Sidebar -->
+      <% if current_admin.present? %>
+        <%= render partial: "layouts/partials/sidebar" %>
+      <% end %>
+      <!-- Main Content -->
+      <%= yield %>
   </body>
 </html>

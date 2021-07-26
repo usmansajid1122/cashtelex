@@ -836,6 +836,7 @@ button.menu-hamburger {
     width: 20%;
     background: #002046;
     overflow: auto;
+    overflow-y: scroll !important;
 }
 
 .action-buttons2 {

@@ -12,7 +12,7 @@
 default: &default
   adapter: mysql2
   username: root
-  password: 
+  password: esfera
   pool: 5
   host:  localhost
   port: 3306
@@ -48,7 +48,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
   database: cashtelex_production
-  username: cashtelex
-  password: <%= ENV['CASHTELEX_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  username: root
+  password: xP4wT6dI8^I5vzMK7hC7
+  pool: 5
+  host:  localhost
+  port: 3306
+  
