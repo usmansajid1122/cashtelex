@@ -1489,7 +1489,7 @@ section.all-dashboard.instructor-sec.cont-m table.table-type2  tr td {
 .preview-img
 {
     border-radius: 100%;
-    box-shadow: 0px 0px 5px 2px rgb(224 224 224 / 70%);
+    /*box-shadow: 0px 0px 5px 2px rgb(224 224 224 / 70%);*/
 }
 
 .browse-button
