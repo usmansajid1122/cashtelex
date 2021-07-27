@@ -321,7 +321,7 @@ section#Login_main .form_wrap .input-group .right {
 
 .banner_wrap-inner:before {
     content: "";
-    background-color: rgba(0 0 0 / 20%);
+    /*background-color: rgb(0 0 0 / 20%);*/
     height: 100%;
     width: 100%;
     position: absolute;
@@ -821,7 +821,7 @@ section.page_wrap .content_wrap {
 
 body.toggle_show section#sidebar_main_wrap:before {
     content: "";
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
     height: 100%;
     width: 100%;
     position: absolute;
@@ -998,7 +998,7 @@ section#sidebar_main_wrap {
 
 body.toggle_show section#sidebar_main_wrap:before {
     content: "";
-    background-color: rgba(0 0 0 / 25%);
+    /*background-color: rgb(0 0 0 / 25%);*/
     height: 100%;
     width: 100%;
     position: absolute;
