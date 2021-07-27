@@ -13,7 +13,7 @@
    position: absolute;
    height: 100vh;
    content: '';
-   background: rgba(118 208 223 / 50%);
+   /*background: rgba(118 208 223 / 50%);*/
    z-index: 1;
    width: 100%;
 }
