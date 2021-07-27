@@ -321,7 +321,7 @@ section#Login_main .form_wrap .input-group .right {
 
 .banner_wrap-inner:before {
     content: "";
-    background-color: rgba(0 0 0 / 20%);
+    /*background-color: rgba(0 0 0 / 20%);*/
     height: 100%;
     width: 100%;
     position: absolute;
@@ -466,7 +466,7 @@ section#Login_main .social_icon-inner .left a img {
     border: 1px solid #a2a2a2;
     padding: 20px 30px;
     border-radius: 18px;
-    box-shadow: -1.877px 11.852px 49px 0px rgba(115, 115, 115, 0.1);
+    /*box-shadow: -1.877px 11.852px 49px 0px rgba(115, 115, 115, 0.1);*/
     position: relative;
 }
 
@@ -743,7 +743,7 @@ section#Login_main .social_icon-inner .left a img {
     border: 1px solid #a2a2a2;
     padding: 40px 30px;
     border-radius: 18px;
-    box-shadow: -1.877px 11.852px 49px 0px rgba(115, 115, 115, 0.1);
+    /*box-shadow: -1.877px 11.852px 49px 0px rgba(115, 115, 115, 0.1);*/
     position: relative;
 }
 
@@ -821,7 +821,7 @@ section.page_wrap .content_wrap {
 
 body.toggle_show section#sidebar_main_wrap:before {
     content: "";
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
     height: 100%;
     width: 100%;
     position: absolute;
@@ -998,7 +998,7 @@ section#sidebar_main_wrap {
 
 body.toggle_show section#sidebar_main_wrap:before {
     content: "";
-    background-color: rgba(0 0 0 / 25%);
+    /*background-color: rgba(0 0 0 / 25%);*/
     height: 100%;
     width: 100%;
     position: absolute;
