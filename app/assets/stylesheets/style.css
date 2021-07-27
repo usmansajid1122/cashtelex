@@ -321,7 +321,7 @@ section#Login_main .form_wrap .input-group .right {
 
 .banner_wrap-inner:before {
     content: "";
-    background-color: rgb(0 0 0 / 20%);
+    /*background-color: rgb(0 0 0 / 20%);*/
     height: 100%;
     width: 100%;
     position: absolute;
