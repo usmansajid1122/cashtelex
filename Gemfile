@@ -67,3 +67,4 @@ gem 'pry'
 gem 'unicorn'
 
 gem 'tinymce-rails'
+
