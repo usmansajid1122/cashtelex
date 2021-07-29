@@ -16,7 +16,6 @@ require("packs/functions.js")
 //= require jquery_ujs
 //= require_tree .
 //= require turbolinks
-
  // require ("highcharts/highcharts")
 import Highcharts from 'highcharts'
 import HighchartsMore from 'highcharts/highcharts-more';

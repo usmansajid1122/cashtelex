@@ -65,3 +65,6 @@ gem 'lazy_high_charts'
 gem 'pry'
 
 gem 'unicorn'
+
+gem 'tinymce-rails'
+
