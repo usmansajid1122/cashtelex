@@ -20,6 +20,6 @@ class Admins::ServicesController < ApplicationController
   end
 
   def service_attributes
-    params.require(:service).permit(:title, :content)
+    params.require(:service).permit(:title, :content, :banner)
   end
 end
