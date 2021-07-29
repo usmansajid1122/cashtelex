@@ -4,10 +4,10 @@
     <div class="block-element">
       <div class="row">
         <%= form_for([:admins, @service], class: "col-md-12 col-lg-12 col-sm-12 col-xs-12") do |f| %>
-        <%= render "devise/shared/error_messages", resource: @service %>
-         <% if flash[:notice] %>
-          <p id= "flash_notice" class="flash_notice"><%= flash[:notice] %></p>
-        <% end %>
+          <%= render "devise/shared/error_messages", resource: @service %>
+          <% if flash[:notice] %>
+            <p id= "flash_notice" class="flash_notice"><%= flash[:notice] %></p>
+          <% end %>
           <div class="bookings-header  title-d">
             <h6 class="col-grey page-title-c" style="font-size: 16px;margin-bottom: 18px;">
               <span class="terms-c"><%= service_title(@service.title, "first") %><span class="c1"> <%= service_title(@service.title, "last") %>  </span> </span>
@@ -28,22 +28,22 @@
               <div class="form-label">
                 <p class="col-grey"> Add Banner </p>
               </div>
+              <!-- Show Banner -->
+              <div style = "padding-bottom:10px">
+                <% if @service.banner.attached? %>
+                  <%= image_tag @service.banner %>
+                    <!-- For thumbail, uncomment below line -->
+                  <%#= image_tag @service.banner.variant(resize_to_limit: [100, nil]) %>
+                <% end %>
+              </div>
+
+              <!-- Show Banner -->
               <div class="form-field1 m-b-20 banner-sec-f">
                 <div class="upload-img-sections">
                   <div class="upload-camera-sec-1">
                     <div class="upload-img">
-                      <%= image_tag("img-1/photo-camera.png") %>
-                      <input  id="uu" accept=".png" class="upload-cd" type="file" name="upload_csv">
-                      <span class="text-cd"> Click Picture from the Camera <br>
-                        1024*90 </span>
-                    </div>
-                  </div>
-                  <div class="upload-camera-sec-2 upload-camera-sec-1">
-                    <div class="upload-img">
-                      <%= image_tag("img-1/image-c.png") %>
-                      <input  id="uu" accept=".csv" class="upload-cd" type="file" name="upload_csv">
-                      <span class="text-cd"> Click Picture from the Camera <br>
-                        1024*90 </span>
+                      <%= image_tag("img-1/image-c.png")  %>
+                      <%= f.file_field :banner %>
                     </div>
                   </div>
                 </div>
