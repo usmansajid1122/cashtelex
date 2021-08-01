@@ -25,14 +25,16 @@
         </div>
       </div>
       <div class="menu-item">
+        <%= link_to admins_service_service_providers_path(gold_service.id), class: current_class_on_tab("service_providers") do %>
+          <%= image_tag service_image_path(gold_service.title), class: "active-c" %> <%= gold_service.title %>
+        <% end %>
+      </div>
+      <div class="menu-item">
         <a href="<%= edit_admins_about_path(About.first) %>" class="<%= current_class_on_tab("abouts") %>"><%= image_tag("img-1/document.png") %> About  Us  </a>
       </div>
       <div class="menu-item">
         <a href="<%= edit_admins_term_path(Term.first) %>" class="<%= current_class_on_tab("terms") %>"><%= image_tag("img-1/document.png") %> Terms and Condition</a>
       </div>
-      <!-- <div class="menu-item">
-        <a href="" class="<%= current_class_on_tab() %>"><%= image_tag("img-1/user-c.png") %> Profile </a>
-      </div> -->
       <div class="menu-item">
         <a href="<%= edit_admin_registration_path %>" class="<%= current_class_on_tab("registrations") %>"><%= image_tag("img-1/setting-spanner.png") %> Setting </a>
       </div>

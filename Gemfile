@@ -68,3 +68,5 @@ gem 'unicorn'
 
 gem 'tinymce-rails'
 
+gem 'country_select', '~> 6.0'
+

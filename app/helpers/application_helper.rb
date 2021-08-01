@@ -30,4 +30,22 @@ module ApplicationHelper
       return  "img-2/store.png"
     end
   end
+
+  def gold_service
+    Service.find_by_title("CashTelex Gold")
+  end
+
+  def service_providers_stats stats_type
+    case stats_type
+    when "gold"
+      ServiceProvider.sum(:quantity)
+    when "us_price"
+      ServiceProvider.sum(:price_in_gram)
+    when "btc_price"
+      ServiceProvider.sum(:price_in_btc)
+    when "ctlx_price"
+      ServiceProvider.sum(:price_in_ctlx)
+    end
+  end  
+
 end

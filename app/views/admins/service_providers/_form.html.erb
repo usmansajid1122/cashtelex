@@ -1,0 +1,176 @@
+<%= form_for([:admins, @service, @service_provider], class: "box-type1  notify") do |f|  %>
+<%= render "devise/shared/error_messages", resource: @service_provider %>
+<div class="row">
+   <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+      <div class="form-label">
+         <p class="col-grey"> Shop Name </p>
+      </div>
+      <div class="form-field1 m-b-20">
+         <%= f.text_field :name, class: "form-control" %>
+      </div>
+   </div>
+   <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+      <div class="form-label">
+         <p class="col-grey"> Country </p>
+      </div>
+      <div class="form-field1 m-b-20">
+        <%= f.country_select :country, ['United States', 'Canada', 'United Kingdom', 'India'] %>
+      </div>
+   </div>
+   <div class="col-md-6 col-lg-6">
+      <div class="form-label">
+         <p class="col-grey"> State  </p>
+      </div>
+      <div class="form-field1 m-b-20">
+         <div class="form-field1 m-b-20" id="states" >
+            <!-- STATES WILL BE DYNAMICALLY APPENDED BY THE AJAX -->
+         </div>
+      </div>
+   </div>
+   <div class="col-md-6 col-lg-6">
+      <div class="form-label">
+         <p class="col-grey"> City </p>
+      </div>
+      <div class="form-field1 m-b-20" id="citites">
+        <%= f.text_field :city, class: "form-group" %>
+      </div>
+   </div>
+   <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"    style="clear:both;">
+      <div class="form-label">
+         <p class="col-grey"> Quantity </p>
+      </div>
+      <div class="form-field1 m-b-20">
+         <%= f.number_field :quantity, class: "form-group" %>
+      </div>
+   </div>
+   <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+      <div class="rate-used-sec">
+         <div class="rate-inner-used-sec">
+            <div class="form-label">
+               <p class="col-grey"> Rate Per Gram in USD </p>
+            </div>
+            <div class="form-field1 m-b-20">
+               <%= f.number_field :price_in_gram, min: 1, step: 0.5, class: "form-group" %>
+            </div>
+         </div>
+         <div class="rate-inner-used-sec  rate-btc">
+            <div class="form-label">
+               <p class="col-grey"> Rate in BTC </p>
+            </div>
+            <div class="form-field1 m-b-20">
+               <%= f.number_field :price_in_btc, min: 1, step: 0.5, class: "form-group" %>
+            </div>
+         </div>
+         <div class="rate-inner-used-sec  rate-ctlx">
+            <div class="form-label">
+               <p class="col-grey"> Rate in CTLX </p>
+            </div>
+            <div class="form-field1 m-b-20">
+               <%= f.number_field :price_in_ctlx, min: 1, step: 0.5, class: "form-group" %>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+      <div class="add-images">
+          <div class="rate-header-sec">
+          <div class="form-label">
+              <p class="col-grey"> Add Images </p>
+          </div>
+          </div>
+      <div class="add-images-sec">
+          <div class="uploaded-sec-img">
+              <div class="row">
+                  <div class="col-md-4 preview previwe-c text-center  img-hh">
+                      <div class="inner-pro">
+                      <div class="preview-box">
+                          <%= image_tag("img-2/gallery-1.png") %>
+                      </div>
+                      <div class="browse-button delete-medical-report" data-id="97">
+                          <i class="fas fa-times"></i>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 preview previwe-c text-center  img-hh">
+                      <div class="inner-pro">
+                      <div class="preview-box">
+                          <%= image_tag("img-2/gallery-1.png") %>
+                      </div>
+                      <div class="browse-button delete-medical-report" data-id="97">
+                          <i class="fas fa-times"></i>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 preview previwe-c text-center upload-img-hhc">
+                      <div class="inner-pro">
+                      <div class="browse-button">
+                          <i class="fa fa-plus"></i>
+                          <input class="browse-input" type="file" required="" name="UploadedFile" id="userImage" accept="image/jpeg,image/png,application/pdf">
+                      </div>
+                      <div class="preview-box">Browse Image</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> 
+      </div>
+      </div> -->
+   <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+      <div class="form-label">
+         <p class="col-grey"> Zipcode </p>
+      </div>
+      <div class="form-field1 m-b-20">
+         <%= f.number_field :zipcode, class: "form-group" %>
+      </div>
+   </div>
+   <div class="col-md-6 col-lg-6">
+      <div class="form-label">
+         <p class="col-grey"> Address </p>
+      </div>
+      <div class="form-field1 m-b-20">
+         <%= f.text_field :address, class: "form-group" %>
+      </div>
+   </div>
+   <div class="col-md-12">
+      <div class="form-label">
+         <p class="col-grey"> Description </p>
+      </div>
+      <div class="form-field1 m-b-20">
+         <%= f.text_area :description, class: "form-control" %>
+      </div>
+   </div>
+   <div class="col-md-12">
+      <%= f.submit "Save Gold", class: "btn edit-gold" %>
+   </div>
+</div>
+<% end %>
+
+<%= content_for :javascript do %>
+  <script>
+    var countrySelectBox = document.querySelector("#service_provider_country");
+    var service_id = "<%= params[:service_id] %>";
+    var url = "/admins/services/"+service_id+"/service_providers/get_states"
+    var state = "<%= @service_provider.state %>"
+    
+    hit_ajax(countrySelectBox.value, state); // load states on page load
+    
+    // load states when the country changess
+    countrySelectBox.addEventListener("change", (event) => {
+      hit_ajax(event.target.value);
+    });
+
+    function hit_ajax(country_code = "US", state = "") {
+      $.ajax({
+        url: url,
+        method: 'POST',
+        data: { country_code: country_code, state: state },
+        success: function(data) {
+            console.log('success')
+        },
+        error: function() {
+            console.log('failure')
+        }
+      });
+    }
+  </script>
+<% end %>

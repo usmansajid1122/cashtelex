@@ -12,7 +12,7 @@
 default: &default
   adapter: mysql2
   username: root
-  password: Vishal@8277
+  password: 
   pool: 5
   host:  localhost
   port: 3306

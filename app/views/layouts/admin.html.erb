@@ -10,11 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
+    <%= hidden_field_tag :controller_name, controller_name%>
     <!-- Sidebar -->
     <%= render partial: "layouts/partials/sidebar" %>
     <!-- Main Content -->
     <%= tinymce_assets %>
     <%= tinymce %>
     <%= yield %>
+    <%= yield :javascript %>
   </body>
 </html>

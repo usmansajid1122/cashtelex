@@ -1,0 +1,112 @@
+<section class="all-dashboard instructor-sec user-html-c">
+   <div class="dashboard-wrapper  cashtolex-gold-sec">
+      <div class="block-element">
+         <div class="row m-b-20">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+               <div class="page-title">
+                  <h3 class="col-black"> Service Provider </h3>
+               </div>
+            </div>
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 ">
+               <div class="right-side-c">
+                  <div class="date-sec custom-c34">
+                     <div class="serach-bar">
+                        <input type="text" class="form-control" placeholder="Search Member">
+                        <span><i class="fa fa-search"></i></span>
+                     </div>
+                     <span class="add-new">  Add New  </span>
+                    <%= link_to new_admins_service_service_provider_path(@service) do %>
+                      <span class="cal-icon icon-d  custom-c2">
+                        <%= image_tag("img-2/add-icon.png") %>
+                      </span>
+                    <% end %>  
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="block-element dash-div">
+            <div class="row">
+               <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                  <div class="dashboard-box box-type1">
+                     <div class="dash-title first-div">
+                        <h4><%= service_providers_stats("gold") %></h4>
+                        <p class="col-grey"> Total Gold </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                  <div class="dashboard-box box-type1">
+                     <div class="dash-title sec-div">
+                        <h4><%= service_providers_stats("us_price") %></h4>
+                        <p class="col-grey"> Total USD Price </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                  <div class="dashboard-box box-type1">
+                     <div class="dash-title third-div">
+                        <h4><%= service_providers_stats("btc_price") %></h4>
+                        <p class="col-grey"> Total BTC Price</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                  <div class="dashboard-box box-type1">
+                     <div class="dash-title four-div">
+                        <h4><%= service_providers_stats("ctlx_price") %></h4>
+                        <p class="col-grey"> Total CTLX Price </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="block-element gold-headings">
+            <div class="row">
+               <h3>Total Gold Shapes</h3>
+            </div>
+         </div>
+         <div class="row">
+            <table class="table-type1">
+               <tbody>
+                  <tr>
+                     <th class="col-black"> Sr.No. </th>
+                     <th class="col-black"> Photo </th>
+                     <th class="col-black">Country </th>
+                     <th class="col-black"> Grams Quantity </th>
+                     <th class="col-black"> Zipcode </th>
+                     <th class="col-black"> USD Rate Per Gram  </th>
+                     <th class="col-black"> In Btc </th>
+                     <th class="col-black"> In CTLX </th>
+                     <th class="col-black"> Actions </th>
+                  </tr>
+                  <% @service_providers.each do |provider| %>
+                    <tr>
+                        <td><%= provider.id %></td>
+                        <td class="photo-c"> <%= image_tag("user-pic.png") %>
+                        <td><%= provider.country %></td>
+                        <td><%= provider.quantity %> Grams</td>
+                        <td><%= provider.zipcode %></td>
+                        <td> $<%= provider.price_in_gram %> </td>
+                        <td> <%= provider.price_in_btc %></td>
+                        <td> <%= provider.price_in_ctlx %></td>
+                        <td class=" actions-btn-c">
+                          <%= link_to admins_service_service_provider_path(@service, provider), class: "edit-btn-f" do %>
+                            <%= image_tag("img-2/eye.png") %>
+                          <% end %>
+
+                          <%= link_to edit_admins_service_service_provider_path(@service, provider), class: "edit-btn-f" do %>
+                            <%= image_tag("img-2/content.png") %>
+                          <% end %>
+
+                          <%= link_to admins_service_service_provider_path(@service, provider), class: "edit-btn-f", method: :delete, data: { confirm: "Are you sure?" } do %>
+                            <%= image_tag("img-2/cross.png") %>
+                          <% end %>
+                        </td>
+                    </tr>
+                  <% end %>   
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+</section>
