@@ -19,6 +19,12 @@ Rails.application.routes.draw do
     resources :dashboards
     resources :abouts
     resources :terms
-    resources :services
+    resources :services do
+      resources :service_providers do 
+        collection do
+          post :get_states 
+        end
+      end
+    end
   end
 end

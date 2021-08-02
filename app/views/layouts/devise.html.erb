@@ -12,6 +12,8 @@
   <body>
     <!-- Sidebar -->
       <% if current_admin.present? %>
+        <%= tinymce_assets %>
+        <%= tinymce %>
         <%= render partial: "layouts/partials/sidebar" %>
       <% end %>
       <!-- Main Content -->

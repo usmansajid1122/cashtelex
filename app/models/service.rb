@@ -3,14 +3,14 @@ class Service < ApplicationRecord
   has_one_attached :banner
   validate :validate_banner
 
+  has_many :service_providers
+
   def validate_banner
     if banner.attached?
       acceptable_types = ["image/jpeg", "image/png"]
       unless acceptable_types.include?(banner.content_type)
         errors.add(:banner, "must be a JPEG or PNG")
       end
-    else
-      errors.add(:banner, "banner can't be blank")
-    end
+    end  
   end
 end

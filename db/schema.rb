@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_28_163736) do
+ActiveRecord::Schema.define(version: 2021_08_01_063052) do
 
   create_table "abouts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
@@ -20,8 +20,6 @@ ActiveRecord::Schema.define(version: 2021_07_28_163736) do
   end
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    
-    
     t.string "name", null: false
     t.string "record_type", null: false
     t.bigint "record_id", null: false
@@ -42,7 +40,6 @@ ActiveRecord::Schema.define(version: 2021_07_28_163736) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -60,6 +57,24 @@ ActiveRecord::Schema.define(version: 2021_07_28_163736) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "service_providers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "service_id"
+    t.string "name"
+    t.string "country"
+    t.string "state"
+    t.string "city"
+    t.float "quantity"
+    t.float "price_in_gram"
+    t.float "price_in_btc"
+    t.float "price_in_ctlx"
+    t.integer "zipcode"
+    t.string "address"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["service_id"], name: "index_service_providers_on_service_id"
   end
 
   create_table "services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
