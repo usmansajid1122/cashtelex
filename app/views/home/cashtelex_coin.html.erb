@@ -6,7 +6,7 @@
       <div class="menu-wrap ct-sec-2 services-sec   about-us-sec">
          <div class="container">
             <div class="services-head">
-               <h3>CashTelex Coin</h3>
+               <h3><%= @service.title %></h3>
                <p> It is long established fact that reader. </p>
             </div>
             <div class="row">
@@ -14,7 +14,11 @@
                   <div class="card_inner-inner">
                      <div class="right-inner">
                         <div class="left "  id="main-m">
-                           <img src="/assets/Services/service-55.png" alt="">
+                           <% if @service.banner.attached? %>
+                              <%= image_tag @service.banner %>
+                            <% else %>
+                              <img src="/assets/Services/service-55.png" alt="">
+                            <% end %>
                            <div class="blog-watermark">
                               <img src="/assets/Services/cash-tolex-watermark.png" alt="">
                            </div>
@@ -31,12 +35,7 @@
                               <span>Chief Compliance officer</span>
                            </div>
                            <h5> What is TRX? ? </h5>
-                           <p>
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                           </p>
-                           <p>
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                           </p>
+                           <p><%= @service.content %></p>
                            <div class="blog-link  services-21">
                               <div class="row">
                                  <div class="col-md-12">
