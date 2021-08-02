@@ -1130,7 +1130,7 @@ body.toggle_show section#sidebar_main_wrap:before {
 }
 
 .dropdown-menu {
-    top: 150%;
+    /*top: 150%;*/
     left: -40px;
 }
 
