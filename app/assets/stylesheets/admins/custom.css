@@ -4020,17 +4020,13 @@ padding: 6px 10px;
 
 .menu-item.collapse-d2 i.fa.fa-angle-right {
     position: absolute;
-    right: -151px;
+    right: 0px;
     width: 21px;
     font-size: 21px;
 }
 
 
-.menu-item.collapse-d2 span {
 
-
-    position: relative;
-}
 
 
 
@@ -4041,19 +4037,14 @@ padding: 6px 10px;
 
 
 
-.menu-item.collapse-d21 i.fa.fa-angle-right {
+.menu-item.collapse-d21 span {
     position: absolute;
-    right: -88px;
+    right: -0px;
     width: 21px;
     font-size: 21px;
 }
 
 
-.menu-item.collapse-d21 span {
-
-
-    position: relative;
-}
 
 
 .menu-item.collapse-d21 div#demo {
@@ -4067,4 +4058,28 @@ a.video-btn img {
     width: 20px;
 
 
+}
+body {
+    margin: 0 0 !important;
+}
+input.form-control[type="date"], input.form-control[type="time"], input.form-control[type="datetime-local"], input.form-control[type="month"] {
+    line-height: normal !important;
+}
+.sidebar-menu a:visited {
+    color: #fff !important;
+}
+.sidebar-menu a:hover {
+    background-color: #021731!important;
+    border: 1px solid #5dcdff;
+border-radius: 100px;   
+}
+a:hover{background: unset !important;}
+.sidebar-menu a {
+    border: 1px solid transparent;
+border-radius: 100px;   
+position: relative;
+}
+.form-label .col-grey {
+    font-size: 16px !important;
+    font-weight: 600;
 }
