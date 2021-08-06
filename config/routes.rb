@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tickets
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'home#index'  ### before login
   resources :home do 		### index routes

@@ -14,11 +14,30 @@
                      <li class="nav-item active">
                         <a class="nav-link" href="/home">Home</a>
                      </li>
+                      <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown">     Services 
+                        <i class="fa fa-angle-down" aria-hidden="true">  </i>
+                        </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="/home/cashtelex_exchange"><%= Service.find_by_title('Cashtelex Exchange').title%></a>
+                            <a class="dropdown-item" href="/home/cashtelex_go"><%= Service.find_by_title('Cashtelex Go').title%></a>
+                             <a class="dropdown-item" href="/home/cashtelex_gold"><%= Service.find_by_title('Cashtelex Gold').title%></a>
+                              <a class="dropdown-item" href="/home/cashtelex_real_estate"><%= Service.find_by_title('Cashtelex Real Estate').title%></a>
+                               <a class="dropdown-item" href="/home/cashtelex_coin"><%= Service.find_by_title('Cashtelex Coin').title%></a>
+                        </div>
+                     </li>
                      <li class="nav-item">
                         <a class="nav-link" href="/home/about_us">About Us</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="/home/contact_us">Contact Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Cashtelex Tower</a>
+                     </li> 
+                                                 
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Cashtelex Gold</a>
                      </li>
                      <li class="nav-item ">
                         <a class="nav-link login-btn" href="/admins/sign_in">Login</a>
