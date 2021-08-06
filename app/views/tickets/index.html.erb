@@ -1,0 +1,65 @@
+
+<section class="all-dashboard instructor-sec user-html-c">
+   <div class="dashboard-wrapper  cashtolex-gold-sec">
+      <div class="block-element">
+         <div class="row m-b-20">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+               <div class="page-title">
+                  <h3 class="col-black"> Customer Support </h3>
+               </div>
+            </div>
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 ">
+               <div class="right-side-c">
+                  <div class="date-sec custom-c34">
+                     <div class="serach-bar">
+                        <input type="text" class="form-control" placeholder="Search Member">
+                        <span><i class="fa fa-search"></i></span>
+                     </div>
+                    
+                  </div>
+               </div>
+            </div>
+         </div>
+        
+         <div class="block-element gold-headings">
+            <div class="row">
+               <h3>Total Tickets</h3>
+            </div>
+         </div>
+         <div class="row">
+            <table class="table-type1">
+               <tbody>
+                  <tr>
+                     <th class="col-black"> Sr.No. </th>
+                     <th class="col-black"> Name </th>
+                     <th class="col-black"> Email </th>
+                     <th class="col-black"> Message </th>
+                     <th class="col-black"> Status </th>
+                     <th class="col-black"> Actions </th>
+                  </tr>
+                  <% @tickets.each do |ticket| %>
+                    <tr>
+                        <td><%= ticket.id %></td>
+                        <td><%= ticket.name %></td>
+                        <td><%= ticket.email %></td>
+                        <td><%= ticket.message %></td>
+                        <td><%= ticket.status %></td>
+                        
+                        <td class=" actions-btn-c">
+                          <%= link_to ticket, class: "edit-btn-f" do %>
+                            <%= image_tag("img-2/eye.png") %>
+                          <% end %>
+
+                          <%= link_to ticket, class: "edit-btn-f", method: :delete, data: { confirm: "Are you sure?" } do %>
+                            <%= image_tag("img-2/cross.png") %>
+                          <% end %>
+                        </td>
+                    </tr>
+                  <% end %>   
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+</section>
+ 
