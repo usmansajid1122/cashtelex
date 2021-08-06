@@ -1,0 +1,58 @@
+
+<section class="all-dashboard instructor-sec user-html-c">
+   <div class="dashboard-wrapper  cashtolex-gold-sec">
+      <div class="block-element">
+         <div class="row m-b-20">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+               <div class="page-title">
+                  <h3 class="col-black"> Customer Support </h3>
+               </div>
+            </div>
+            
+         </div>
+        
+         <div class="row">
+              <div class="custom-s">
+                     <div class="row">
+                        <div class="col-md-12"> 
+
+                     <div class="customer-upper-sec">
+                        
+                        <div class="customer-text-right">
+                          <div class="form-label">
+                                 <p class="col-grey"> Customer </p>
+                              </div>
+                            <h3><%= @ticket.name %></h3> 
+                            <br> 
+                              <div class="form-label">
+                                 <p class="col-grey"> Email </p>
+                              </div>
+                            <h3><%= @ticket.email %> </h3>   
+                        </div>
+
+                     </div>                   
+                     </div>
+
+
+                       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 message-d">
+                              <div class="form-label">
+                                 <p class="col-grey"> Message </p>
+                              </div>
+                              <div class="form-field1 m-b-20">
+                                 <%= @ticket.message %>
+                              </div>
+                           </div> 
+                        <div class="row btn-d text-right">
+                           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                              <%= link_to "Mark As Resolved", ticket_path(@ticket, ticket: {status: 'closed'}), class: 'save-c', :method=> :put    %>
+                            </div>
+                        </div>  
+                  </div>
+
+                    
+                  </div>
+         </div>
+      </div>
+   </div>
+</section>
+ 
