@@ -12,6 +12,7 @@ require("channels")
 require("packs/jquery-3.2.1.min.js")
 require("packs/bootstrap.min.js")
 require("packs/functions.js")
+require("packs/custom.js")
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
@@ -24,7 +25,7 @@ import HighchartsExporting from 'highcharts/modules/exporting';
 
 window.jQuery = jQuery
 window.$ = $
-window.Highcharts = Highcharts;
+window.Highcharts = Highcharts;	
 //= require highcharts/highcharts-more
 //= require highcharts/highstock
 
